@@ -1,0 +1,43 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to bottom right, #fff 0%, #fff 60%, #2ecc71 50%, #2ecc71 100%);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-areas: "buttons iphone";
+    height: 100%;
+}
+
+.iphone {
+    grid-area: iphone;
+    margin-right: 50px;
+    justify-items: center;
+    align-items: center;
+    display: grid;
+    height: 100%;
+}
+
+.iphone img {
+    max-height: 90%;
+}
+
+.buttons {
+    grid-area: buttons;
+    justify-self: center;
+    align-self: center;
+}
+
+.buttons a {
+    text-decoration: none;
+}
+
+.buttons img {
+    width: 200px;
+}
+
+.buttons h1 {
+    font-size: 5em;
+    margin: 0;
+}
